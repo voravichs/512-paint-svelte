@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+    .active-button {
+        @apply px-4 py-1 w-16 flex-center ring-2 rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white
+    }
+    .inactive-button {
+        @apply px-4 py-1 w-16 flex-center ring-2 rounded
+    }
+}
